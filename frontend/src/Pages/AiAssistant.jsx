@@ -18,7 +18,7 @@ const AIAssistant = () => {
     const user = JSON.parse(localStorage.getItem("user"));
 
     const res = await axios.post(
-      "http://localhost:5000/api/ai/create-task",
+      `${import.meta.env.VITE_API_URL}/api/ai/create-task`,
       {
         prompt,
         userId: user.id,

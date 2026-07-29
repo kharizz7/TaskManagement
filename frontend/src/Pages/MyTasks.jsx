@@ -13,7 +13,7 @@ const MyTasks = () => {
     const user = JSON.parse(localStorage.getItem("user"));
 
     const res = await axios.get(
-      "http://localhost:5000/api/tasks",
+      `${import.meta.env.VITE_API_URL}/api/tasks`,
       {
         params: {
           userId: user.id,
