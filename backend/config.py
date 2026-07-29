@@ -5,4 +5,5 @@ load_dotenv()
 
 MONGO_URI = os.getenv("MONGO_URI")
 
-DATABASE_NAME = os.getenv("DATABASE_NAME")
+# Hardcode the database name
+DATABASE_NAME = "TaskManagement"
